@@ -112,16 +112,77 @@ text-align: center;
     display: inline-flex;
     justify-content:center;
     align-items:center;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
     padding-left: 1%;
     padding-top: 1%;
       
 }
 .logo{
-    display: flex;
+    display:inline;
+}
 }
 @media all and (max-width:600px){
+    .navbar{
+        position:relative;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 1%;
+    padding-top: 1%;
+
+    }
+.logo{
+    display: inline;
+}    
+    
+}
+@media only screen and (max-width:580px) and (min-width:380px){
+    .navbar{
+        position:relative;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction:row;
+    padding-left: 1%;
+    padding-top: 1%;
+
+    }
+    
+    .description{
+            text-align:center;
+            display:flexbox;
+            flex-direction: column; 
+            flex-wrap:wrap; 
+            justify-content:space-evenly;
+            align-items:baseline;
+            padding-left: 16%;
+            padding-right: 16%;
+    }
+.logo{
+    display:none;
+}
+}
+@media only screen and (max-width:900px) and (min-width:601px){
+    .navbar{
+        position:relative;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 1%;
+    padding-top: 1%;
+
+}
+.logo{
+    display: inline;
+}
+} 
+@media only screen and (max-width:820px) and (min-width:451px){
     .navbar{
         position:relative;
     display: inline-flex;
@@ -131,10 +192,17 @@ text-align: center;
     flex-direction: column;
     padding-left: 1%;
     padding-top: 1%;
-
-    }
-    .logo{
-        display: none;
     }
 }
+@media (min-width:900px){
+    .navbar{
+        position:relative;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 1%;
+    padding-top: 1%;
+    }
 }
