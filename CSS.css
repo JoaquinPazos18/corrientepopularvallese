@@ -26,11 +26,13 @@
 
         
         body{
+                
             background: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Cristina_Fern%C3%A1ndez_junto_a_N%C3%A9stor_Kirchner_en_la_Plaza_de_Mayo_-_Junio_de_2008.jpg") no-repeat center center fixed;
             -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size:cover;
+
 
 
         
@@ -40,13 +42,12 @@ background-size:cover;
             position: absolute;
             display: flex;
             flex-wrap: wrap;
-            flex-direction: column;
             left: 75%;
             bottom:55%;
             width: 200px;
             
         }
-
+        
        .usina{
            position:absolute;
            text-align: center;
@@ -61,7 +62,7 @@ background-size:cover;
         
            
            .border-radius{
-               border-radius: 50px;
+               border-radius: 500px;
            } 
        #insta{
            width: 50px;
@@ -104,4 +105,36 @@ font-family: "caveat";
 font-size: 20px;
 color:whitesmoke;    
 text-align: center;
+}
+@media all and (min-width:300px){
+    .navbar{ 
+        position:relative;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 1%;
+    padding-top: 1%;
+      
+}
+.logo{
+    display: flex;
+}
+@media all and (max-width:600px){
+    .navbar{
+        position:relative;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 1%;
+    padding-top: 1%;
+
+    }
+    .logo{
+        display: none;
+    }
+}
 }
